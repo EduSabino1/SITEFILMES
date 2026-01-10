@@ -7,5 +7,6 @@ body {
 .header {
     color: aliceblue;
     text-align: center;
+    font-size: 0cap;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
