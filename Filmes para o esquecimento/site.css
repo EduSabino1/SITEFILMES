@@ -8,14 +8,390 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-    background-image: url(./img/post\ 1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-.header {
-    color: aliceblue;
+/*menu*/
+
+.content{
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    padding: 0;
+    color: white;
+}
+
+.content::after {   /** LINHA DA NAV BAR **/ 
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.logo{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 25rem;
+}
+
+.logo h3{
+ font-size: 1.6rem;
+}
+
+.content .nav_list{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content .nav_list li a{
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 2.2rem;
+    text-transform: initial;
+    font-weight: 500;
+    transition: color 150ms ease-in;
+}
+
+.content .nav_list li a:hover{
+    color: rgb(114, 114, 114);
+
+}
+
+
+
+/* first section*/
+
+.first-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -60px;
+}
+
+.conteudo_principal{
+
+    height: auto;
+    display: block;
+}
+
+.first-section h1{
+    color: white;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+
+/* Sobre sla */
+
+.sobre_nos {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column; /* IMPORTANTE para o grid ficar abaixo */
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre_nos img {
+    width: 275px;
+    height: 200px;
+    margin-top: 12rem;
+    margin-left: 1rem;
+}
+
+.sobre_nos .main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contentsobre {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.contentsobre h2 {
+    text-align: left;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    width: 600px;
+}
+
+.contentsobre p {
+    text-align: left;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+.btn-saiba-mais {
+    margin-top: 3rem;
+    padding: 1.2rem 3rem;
+
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+    transition: all 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Projetos */ 
+
+.projetos {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    background-image: url(/sitefilmes/grupo23.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 220px;
+
+}
+
+.projetos h2 {
+    font-size: 7rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.itens_projeto {
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.itens_projeto .info {
+    background-color: antiquewhite;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.texto h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens_projeto img{
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.itens_projeto > div{
+    background-color: azure;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/** CONTATOS **/ 
+
+.contatos {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 2rem; 
+    gap: 25rem;
+}
+
+.contatos h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.footer_list a {
+    text-decoration: none;
+    color: white;
+}
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones .itensc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icones .itensc .icon_row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.icones .itensc .icon_row a {
+    color: white;          
+    text-decoration: none;  
+    display: inline-flex;   
+    align-items: center;
+}
+
+.icones .itensc .icon_row a i,
+.icones .itensc .icon_row i {
+    color: white;
+    font-size: 3rem;        
+}
+
+.itensc h3 {
+    font-size: 1.5rem;
+}
+
+/** CARROSSEL **/ 
+
+.projetos {
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+}
+
+.cards-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem; /* distância igual entre os cards */
+    flex-wrap: wrap; /* ajuda no responsivo */
+}
+
+.card {
+    width: 300px;
+    background-color: #111;
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 2.2rem;
+}
+
+.card p {
+    font-size: 1.6rem;
+    opacity: 0.8;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+.rasgo-baixo::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+
+    background-image: url("../sitefilmes/torn-paper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    pointer-events: none;
+    z-index: 10;
+}
+
+.rasgo-cima::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+
+    background-image: url("../sitefilmes/torn-paper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transform: rotate(180deg);
+    pointer-events: none;
+    z-index: 10;
 }
