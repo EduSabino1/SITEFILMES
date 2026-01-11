@@ -15,33 +15,30 @@ html{
     overflow-x: hidden;
 }
 
-/*menu*/
+/*NAV BAR*/
 
-.content{
+.content {
     width: 100vw;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    color: white;
+
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-.content::after { 
-    content: "";
-    width: 80%;
-    height: 1px;
-    background: rgba(255,255,255,0.2);
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
+.content.scrolled {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
 }
-
 
 .logo{
     width: auto;
@@ -70,6 +67,7 @@ html{
     text-transform: initial;
     font-weight: 500;
     transition: color 150ms ease-in;
+
 }
 
 .content .nav_list li a:hover{
@@ -81,31 +79,44 @@ html{
 /* first section*/
 
 .first-section {
-     height: 100vh;
+    height: 100vh;
     width: 100vw;
-    background-image: url("./img/navbar.png"); /* SUA IMAGEM */
+    box-sizing: border-box;
+    padding-top: 90px;
+
+    background-image: url("./img/bgimg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 30% 100%;
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    
 }
 
 .home {
     padding-top: 90px;
 }
 
-.conteudo_principal{
-
-    height: auto;
-    display: block;
+.conteudo_principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-left: 15%;        
+    max-width: 600px;
 }
 
-.first-section h1{
+.conteudo_principal p {
     color: white;
-    font-size: 7rem;
-    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.conteudo_principal h1 {
+    color: white;
+    font-size: 5rem;
+    line-height: 1.1;
 }
 
 
