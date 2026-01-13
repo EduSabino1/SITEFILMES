@@ -105,7 +105,7 @@ html{
     justify-content: flex-start;
 
     font-family: Kinetica;
-    
+
 }
 
 .first-section::after {
@@ -145,6 +145,7 @@ html{
     color: white;
     font-size: 5rem;
     line-height: 1.1;
+    font-family: Stranger;
 }
 
 /* Projetos */ 
