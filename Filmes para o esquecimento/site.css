@@ -152,18 +152,20 @@ html{
 .projetos {
     position: relative;
     width: 100vw;
-    padding: 220px 0;
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-<<<<<<< HEAD
+
 
     background-image: url("./img/Papel-rasgado.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    padding: 220px 220px 300px;
-    font-family: Kinetika;
+    padding: 220px;
+    font-size: Kinetica;
 }
 
 .projetos::after {
@@ -186,35 +188,19 @@ html{
 .projetos > * {
     position: relative;
     z-index: 1;
-=======
-    background-color: #ffffff;
-    background-size: cover;
-    background-position: center;    
-    background-repeat: no-repeat;
->>>>>>> 4238125a54a0fd88ad862c481f53bb2d564ec730
+
 }
 
 .projetos h2 {
     font-size: 7rem;
-<<<<<<< HEAD
+
     color: rgb(0, 0, 0);
-=======
-    color: rgb(75, 74, 74);
->>>>>>> 4238125a54a0fd88ad862c481f53bb2d564ec730
+    
     text-transform: uppercase;
     font-family: Stranger;
 }
 
-<<<<<<< HEAD
-.itens_projeto {
-    width: 80%;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-}
+
 
 .itens_projeto .info {
     background-color: antiquewhite;
@@ -316,8 +302,6 @@ html{
     color: #fff;
 }
 
-=======
->>>>>>> 4238125a54a0fd88ad862c481f53bb2d564ec730
 /** CONTATOS **/ 
 
 .contatos {
