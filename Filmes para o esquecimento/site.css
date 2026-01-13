@@ -24,6 +24,11 @@ html{
     src: url(./Fontes/kinetika-bold.ttf), format(truetype);
 }
 
+@font-face {
+    font-family: Friends;
+    src: url(./Fontes/Friends-SemiBold.ttf), format(truetype);
+}
+
 /*NAV BAR*/
 
 .content {
@@ -307,7 +312,7 @@ html{
 
 .contatos {
     width: 100%;
-    background-color: black;
+    background-color: #000;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -316,6 +321,7 @@ html{
     color: white;
     padding-bottom: 2rem; 
     gap: 25rem;
+    font-family: Kinetika;
 }
 
 .contatos h3 {
@@ -419,7 +425,7 @@ html{
 }
 
 .titulo-card {
-    width: 160px; /* ajuste fino */
+    width: 160px;
     height: auto;
     opacity: 0.9;
     transform: rotate(-2deg);
