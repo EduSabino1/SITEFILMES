@@ -5,7 +5,6 @@
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html{
@@ -13,6 +12,16 @@ html{
     height: 100vh;
     font-size: 62.5%;
     overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Stranger ;
+    src: url(./Fontes/STRANGERTHINGS-REGULAR.TTF), format(truetype);
+}
+
+@font-face {
+    font-family: Kinetika;
+    src: url(./Fontes/kinetika-bold.ttf), format(truetype);
 }
 
 /*NAV BAR*/
@@ -33,6 +42,8 @@ html{
     z-index: 10;
 
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    
+    font-family: Kinetika;
 }
 
 .content.scrolled {
@@ -92,7 +103,23 @@ html{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
+    font-family: Kinetica;
     
+}
+
+.first-section::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+
+  background-image: url("./img/Papel-rasgado.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .home {
@@ -111,6 +138,7 @@ html{
     color: white;
     font-size: 1.6rem;
     margin-bottom: 1rem;
+    margin-top: 30px;
 }
 
 .conteudo_principal h1 {
@@ -119,93 +147,52 @@ html{
     line-height: 1.1;
 }
 
-
-/* Sobre sla */
-
-.sobre_nos {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    padding-bottom: 5rem;
-    display: flex;
-    flex-direction: column; /* IMPORTANTE para o grid ficar abaixo */
-    align-items: center;
-    justify-content: center;
-}
-
-.sobre_nos img {
-    width: 275px;
-    height: 200px;
-    margin-top: 12rem;
-    margin-left: 1rem;
-}
-
-.sobre_nos .main {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.contentsobre {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 5rem;
-}
-
-.contentsobre h2 {
-    text-align: left;
-    font-size: 6rem;
-    margin-bottom: 1rem;
-    width: 600px;
-}
-
-.contentsobre p {
-    text-align: left;
-    font-size: 1.8rem;
-    width: 600px;
-}
-
-.btn-saiba-mais {
-    margin-top: 3rem;
-    padding: 1.2rem 3rem;
-
-    border: 1px solid #000;
-    color: #000;
-    text-decoration: none;
-
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-
-    transition: all 0.3s ease;
-}
-
-.btn-saiba-mais:hover {
-    background-color: #000;
-    color: #fff;
-}
-
 /* Projetos */ 
 
 .projetos {
+    position: relative;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
-    background-image: url(/sitefilmes/grupo23.png);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 220px;
 
+    background-image: url("./img/Papel-rasgado.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding: 220px 220px 300px;
+    font-family: Kinetika;
+}
+
+.projetos::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  height: 370px;
+
+  background-image: url("./img/Papel-rasgado.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transform: rotate(180deg);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.projetos > * {
+    position: relative;
+    z-index: 1;
 }
 
 .projetos h2 {
     font-size: 7rem;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
+    font-family: Stranger;
 }
 
 .itens_projeto {
@@ -249,6 +236,74 @@ html{
     text-align: center;
 }
 
+/* Sobre sla */
+
+.sobre_nos {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column; /* IMPORTANTE para o grid ficar abaixo */
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre_nos img {
+    width: 275px;
+    height: 200px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.sobre_nos .main {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-family: Kinetika;
+}
+
+.contentsobre {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.contentsobre h2 {
+    text-align: left;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    width: 600px;
+    font-family: Stranger;
+    color: #ffffff;
+}
+
+.contentsobre p {
+    text-align: left;
+    font-size: 1.8rem;
+    width: 600px;
+    color: rgb(255, 255, 255);
+}
+
+.btn-saiba-mais {
+    margin-top: 3rem;
+    padding: 1.2rem 3rem;
+
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+    transition: all 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 /** CONTATOS **/ 
 
