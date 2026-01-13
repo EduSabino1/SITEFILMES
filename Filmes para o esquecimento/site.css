@@ -152,10 +152,10 @@ html{
 .projetos {
     position: relative;
     width: 100vw;
+    padding: 220px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+<<<<<<< HEAD
 
     background-image: url("./img/Papel-rasgado.png");
     background-repeat: no-repeat;
@@ -186,15 +186,26 @@ html{
 .projetos > * {
     position: relative;
     z-index: 1;
+=======
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+>>>>>>> 4238125a54a0fd88ad862c481f53bb2d564ec730
 }
 
 .projetos h2 {
     font-size: 7rem;
+<<<<<<< HEAD
     color: rgb(0, 0, 0);
+=======
+    color: rgb(75, 74, 74);
+>>>>>>> 4238125a54a0fd88ad862c481f53bb2d564ec730
     text-transform: uppercase;
     font-family: Stranger;
 }
 
+<<<<<<< HEAD
 .itens_projeto {
     width: 80%;
     margin-top: 1rem;
@@ -305,6 +316,8 @@ html{
     color: #fff;
 }
 
+=======
+>>>>>>> 4238125a54a0fd88ad862c481f53bb2d564ec730
 /** CONTATOS **/ 
 
 .contatos {
@@ -377,13 +390,17 @@ html{
 /** CARROSSEL **/ 
 
 .projetos {
-    padding: 8rem 0;
-    text-align: center;
+    padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.projetos h2 {
+.projetos > h2 {
     font-size: 5rem;
-    margin-bottom: 4rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8rem;
 }
 
 .cards-projetos {
@@ -407,6 +424,20 @@ html{
     gap: 1rem;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.titulo-card {
+    width: 160px; /* ajuste fino */
+    height: auto;
+    opacity: 0.9;
+    transform: rotate(-2deg);
 }
 
 .card img {
