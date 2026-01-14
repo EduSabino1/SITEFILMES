@@ -210,3 +210,17 @@ html{
 .itensc h3 {
     font-size: 1.5rem;
 }
+
+/* frufru nav bar*/
+
+.content .nav_list li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.content .nav_list li a:hover {
+    color: #b30000; /* vermelho */
+}

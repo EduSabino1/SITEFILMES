@@ -148,3 +148,17 @@ html{
     object-fit: cover;
     filter: contrast(120%) saturate(90%);
 }
+
+/* frufru nav bar*/
+
+.content .nav_list li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.content .nav_list li a:hover {
+    color: #b30000; /* vermelho */
+}
