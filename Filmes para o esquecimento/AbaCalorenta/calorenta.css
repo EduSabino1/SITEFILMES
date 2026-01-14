@@ -110,7 +110,7 @@ html{
 }
 
 .cartaz {
-    width: 320px; /* 🔥 maior que antes */
+    width: 320px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -119,7 +119,7 @@ html{
 
 .cartaz img {
     width: 100%;
-    height: 460px; /* 🔥 poster alto, estilo cinema */
+    height: 460px;
     object-fit: cover;
     border-radius: 6px;
     transition: transform 0.3s ease;

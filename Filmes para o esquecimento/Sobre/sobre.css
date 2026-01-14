@@ -5,7 +5,7 @@
     box-sizing: border-box;
     border: none;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Kinetika;
 }
 
 html{
@@ -80,7 +80,7 @@ html{
 .sobre-section {
     min-height: 100vh;
     padding: 16rem 10rem 10rem;
-    background-image: url("../img/fundo-sobre.png");
+    background-image: url("../img/bgfilmes.png");
     background-size: cover;
     background-position: center;
     color: white;
