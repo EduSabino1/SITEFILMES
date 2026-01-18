@@ -29,7 +29,7 @@ html{
     src: url(./Fontes/Friends-SemiBold.ttf), format(truetype);
 }
 
-/*NAV BAR*/
+/* NAV BAR */
 
 .content {
     width: 100vw;
@@ -37,6 +37,8 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 0 10rem;
 
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(0px);
@@ -47,7 +49,6 @@ html{
     z-index: 10;
 
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-    
     font-family: Kinetika;
 }
 
@@ -56,39 +57,29 @@ html{
     backdrop-filter: blur(6px);
 }
 
-.logo{
-    width: auto;
-    height: auto;
-    cursor: pointer;
+.logo {
     display: flex;
     align-items: center;
-    padding-left: 25rem;
+    cursor: pointer;
 }
 
-.logo h3{
- font-size: 1.6rem;
-}
-
-.content .nav_list{
-    width: 600px;
+.content .nav_list {
     display: flex;
     align-items: center;
     gap: 4rem;
+    list-style: none;
 }
 
-.content .nav_list li a{
+.content .nav_list li a {
     padding: 3rem 1rem 2rem 1rem;
     color: white;
     font-size: 2.2rem;
-    text-transform: initial;
     font-weight: 500;
     transition: color 150ms ease-in;
-
 }
 
-.content .nav_list li a:hover{
+.content .nav_list li a:hover {
     color: rgb(114, 114, 114);
-
 }
 
 
