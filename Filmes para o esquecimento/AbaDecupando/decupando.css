@@ -15,18 +15,18 @@ html{
 }
 
 @font-face {
-    font-family: "Stranger" ;
-    src: url("../Fontes/STRANGERTHINGS-REGULAR.TTF") format("truetype");
+    font-family: Stranger;
+    src: url(../Fontes/STRANGERTHINGS-REGULAR.TTF) format(truetype);
 }
 
 @font-face {
     font-family: Kinetika;
-    src: url(./Fontes/kinetika-bold.ttf), format(truetype);
+    src: url(../Fontes/kinetika-bold.ttf), format(truetype);
 }
 
 @font-face {
     font-family: Friends;
-    src: url(./Fontes/Friends-SemiBold.ttf), format(truetype);
+    src: url(../Fontes/Friends-SemiBold.ttf), format(truetype);
 }
 
 /* NAV BAR */
@@ -94,7 +94,7 @@ html{
       url(../img/bgfilmes.png);
 
     background-size: cover;
-    background-position: center 1%; /* 🔥 DESCE A IMAGEM */
+    background-position: center 1%;
     background-repeat: no-repeat;
 
     display: flex;
@@ -107,6 +107,7 @@ html{
     color: white;
     margin-bottom: 10rem;
     text-align: center;
+    font-family: Kinetika;
 }
 
 .cartazes {
@@ -118,7 +119,7 @@ html{
 }
 
 .cartaz {
-    width: 320px; /* 🔥 maior que antes */
+    width: 320px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -127,7 +128,7 @@ html{
 
 .cartaz img {
     width: 100%;
-    height: 460px; /* 🔥 poster alto, estilo cinema */
+    height: 460px;
     object-fit: cover;
     border-radius: 6px;
     transition: transform 0.3s ease;
@@ -141,6 +142,7 @@ html{
     margin-top: 1.2rem;
     font-size: 1.4rem;
     font-weight: 600;
+    font-family: Friends;
 }
 
 .cartaz p {
@@ -148,6 +150,7 @@ html{
     opacity: 0.8;
     margin-top: 0.4rem;
     line-height: 1.4;
+    font-family: Friends;
 }
 
 /** CONTATOS **/ 
@@ -230,5 +233,5 @@ html{
 }
 
 .content .nav_list li a:hover {
-    color: #b30000; /* vermelho */
+    color: #b30000;
 }

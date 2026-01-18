@@ -426,8 +426,8 @@ html{
 .cards-projetos {
     display: flex;
     justify-content: center;
-    gap: 4rem; /* distância igual entre os cards */
-    flex-wrap: wrap; /* ajuda no responsivo */
+    gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -492,5 +492,5 @@ html{
 }
 
 .content .nav_list li a:hover {
-    color: #b30000; /* vermelho */
+    color: #b30000; 
 }

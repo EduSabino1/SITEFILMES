@@ -16,17 +16,17 @@ html{
 
 @font-face {
     font-family: Stranger ;
-    src: url(./Fontes/STRANGERTHINGS-REGULAR.TTF), format(truetype);
+    src: url(../Fontes/STRANGERTHINGS-REGULAR.TTF), format(truetype);
 }
 
 @font-face {
     font-family: Kinetika;
-    src: url(./Fontes/kinetika-bold.ttf), format(truetype);
+    src: url(../Fontes/kinetika-bold.ttf), format(truetype);
 }
 
 @font-face {
     font-family: Friends;
-    src: url(./Fontes/Friends-SemiBold.ttf), format(truetype);
+    src: url(../Fontes/Friends-SemiBold.ttf), format(truetype);
 }
 
 /* NAV BAR */
@@ -97,9 +97,11 @@ html{
 /* TÍTULO */
 
 .titulo-sobre {
+    padding-left: 40px;
     font-size: 6rem;
     font-weight: 400;
     margin-bottom: 6rem;
+    font-family: Kinetika;
 }
 
 /* BLOCO DESTAQUE */
@@ -117,6 +119,7 @@ html{
     width: 55%;
     font-size: 1.5rem;
     line-height: 2.4rem;
+    font-family: Friends;
 }
 
 .texto-sobre p {
@@ -139,14 +142,15 @@ html{
     display: flex;
     justify-content: space-between;
     gap: 6rem;
+    font-family: Kinetika;
 }
 
 h4 {
-    font-family: Stranger;
     font-size: 5rem;
     text-align: center;
     margin-bottom: 6rem;
     letter-spacing: 0.3rem;
+    font-family: Stranger;
 }
 
 .pessoa {
@@ -181,5 +185,5 @@ h4 {
 }
 
 .content .nav_list li a:hover {
-    color: #b30000; /* vermelho */
+    color: #b30000;
 }

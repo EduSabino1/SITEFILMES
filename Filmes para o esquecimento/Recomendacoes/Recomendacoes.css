@@ -14,21 +14,6 @@ html{
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: "Stranger" ;
-    src: url("../Fontes/STRANGERTHINGS-REGULAR.TTF") format("truetype");
-}
-
-@font-face {
-    font-family: Kinetika;
-    src: url(./Fontes/kinetika-bold.ttf), format(truetype);
-}
-
-@font-face {
-    font-family: Friends;
-    src: url(./Fontes/Friends-SemiBold.ttf), format(truetype);
-}
-
 /* NAV BAR */
 
 .content {
@@ -94,7 +79,7 @@ html{
       url(../img/bgfilmes.png);
 
     background-size: cover;
-    background-position: center 1%; /* 🔥 DESCE A IMAGEM */
+    background-position: center 1%;
     background-repeat: no-repeat;
 
     display: flex;
@@ -107,6 +92,7 @@ html{
     color: white;
     margin-bottom: 10rem;
     text-align: center;
+    font-family: Kinetika;
 }
 
 .cartazes {
@@ -141,6 +127,7 @@ html{
     margin-top: 1.2rem;
     font-size: 1.4rem;
     font-weight: 600;
+    font-family: Friends;
 }
 
 .cartaz p {
@@ -148,6 +135,7 @@ html{
     opacity: 0.8;
     margin-top: 0.4rem;
     line-height: 1.4;
+    font-family: Friends;
 }
 
 /** CONTATOS **/ 
