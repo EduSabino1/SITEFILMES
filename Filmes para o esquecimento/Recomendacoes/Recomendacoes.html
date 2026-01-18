@@ -76,5 +76,17 @@
 
 <script src="Recomendacoes.js"></script>
 
+    <script>
+  const navbar = document.querySelector('.content');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>
