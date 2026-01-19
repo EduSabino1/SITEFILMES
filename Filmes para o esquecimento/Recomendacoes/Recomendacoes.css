@@ -14,6 +14,21 @@ html{
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: Stranger ;
+    src: url(../Fontes/STRANGERTHINGS-REGULAR.TTF), format(truetype);
+}
+
+@font-face {
+    font-family: Kinetika;
+    src: url(../Fontes/kinetika-bold.ttf), format(truetype);
+}
+
+@font-face {
+    font-family: Friends;
+    src: url(../Fontes/Friends-SemiBold.ttf), format(truetype);
+}
+
 /* NAV BAR */
 
 .content {
