@@ -83,7 +83,6 @@ html{
     color: rgb(114, 114, 114);
 }
 
-
 /* FILMES */ 
 
 .filmes {
@@ -213,7 +212,6 @@ html{
     align-items: center;
 }
 
-.icones .itensc .icon_row a i,
 .icones .itensc .icon_row i {
     color: white;
     font-size: 3rem;        

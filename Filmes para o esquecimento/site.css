@@ -245,20 +245,26 @@ html{
     justify-content: center;
 }
 
-.sobre_nos img {
+.videosobre {
+    flex: 0 0 260px;
+    max-width: 300px;
+    aspect-ratio: 9 / 16;
+}
+
+.videosobre video {
     width: 100%;
-    height: auto;
-    max-height: 420px;
-
-    object-fit: cover;
-
-    transform: rotate(-2deg);
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    opacity: 0.9;
 }
 
 .sobre_nos .main {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    align-items: center;
     font-family: Kinetika;
     margin-top: 10rem;
 }
@@ -303,7 +309,6 @@ html{
     letter-spacing: 0.1rem;
 
     align-self: flex-start;
-    transition: all 0.3s ease;
 }
 
 .btn-saiba-mais:hover {
