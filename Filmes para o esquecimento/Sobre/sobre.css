@@ -8,11 +8,13 @@
 }
 
 html{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
+/* FONTS */
 
 @font-face {
     font-family: Stranger ;
@@ -29,15 +31,14 @@ html{
     src: url(../Fontes/Friends-SemiBold.ttf), format(truetype);
 }
 
-/* NAV BAR */
+/* NAVBAR */
 
 .content {
-    width: 100vw;
+    width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 10rem;
 
     background-color: rgba(0, 0, 0, 0);
@@ -67,7 +68,6 @@ html{
     display: flex;
     align-items: center;
     gap: 4rem;
-    list-style: none;
 }
 
 .content .nav_list li a {
@@ -75,13 +75,12 @@ html{
     color: white;
     font-size: 2.2rem;
     font-weight: 500;
-    transition: color 150ms ease-in;
+    transition: color 0.2s ease;
 }
 
 .content .nav_list li a:hover {
-    color: rgb(114, 114, 114);
+    color: #b30000;
 }
-
 
 /* SOBRE */
 
@@ -138,19 +137,19 @@ html{
 
 /* EQUIPE */
 
-.equipe-sobre {
-    display: flex;
-    justify-content: space-between;
-    gap: 6rem;
-    font-family: Kinetika;
-}
-
 h4 {
     font-size: 5rem;
     text-align: center;
     margin-bottom: 6rem;
     letter-spacing: 0.3rem;
     font-family: Stranger;
+}
+
+.equipe-sobre {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    font-family: Kinetika;
 }
 
 .pessoa {
@@ -162,7 +161,7 @@ h4 {
 }
 
 .pessoa h2 {
-    font-family:Stranger;
+    font-family: Stranger;
     font-size: 2.8rem;
     margin-bottom: 2rem;
 }
@@ -174,16 +173,79 @@ h4 {
     filter: contrast(120%) saturate(90%);
 }
 
-/* frufru nav bar*/
+/* ========================= */
+/* RESPONSIVO – CELULAR */
+/* ========================= */
 
-.content .nav_list li a {
-    padding: 3rem 1rem 2rem 1rem;
-    color: white;
-    font-size: 2.2rem;
-    font-weight: 500;
-    transition: color 0.2s ease;
-}
+@media (max-width: 768px) {
 
-.content .nav_list li a:hover {
-    color: #b30000;
+    html {
+        font-size: 58%;
+    }
+
+    /* NAVBAR */
+
+    .content {
+        padding: 0 3rem;
+        height: 80px;
+    }
+
+    .content .nav_list {
+        gap: 2rem;
+    }
+
+    .content .nav_list li a {
+        font-size: 1.8rem;
+        padding: 2rem 0.5rem;
+    }
+
+    /* SOBRE */
+
+    .sobre-section {
+        padding: 14rem 3rem 6rem;
+    }
+
+    .titulo-sobre {
+        font-size: 4.2rem;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    /* BLOCO DESTAQUE */
+
+    .sobre-destaque {
+        flex-direction: column;
+        gap: 4rem;
+        padding: 3rem;
+    }
+
+    .texto-sobre {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.3rem;
+    }
+
+    .imagem-sobre {
+        width: 100%;
+    }
+
+    /* EQUIPE */
+
+    h4 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .equipe-sobre {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .pessoa {
+        width: 100%;
+    }
+
+    .pessoa h2 {
+        font-size: 2.4rem;
+    }
 }
